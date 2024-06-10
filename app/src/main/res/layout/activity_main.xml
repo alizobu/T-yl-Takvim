@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/hos"
+        app:layout_constraintBottom_toTopOf="@id/bakim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="137dp"
+        android:background="@drawable/rounded_corners_background"/>
+
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="202dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pacifico"
+        android:text="Tüylü Takvim"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hos"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pacifico"
+        android:text="Hoşgeldin"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logotext" />
+
+    <ImageButton
+        android:id="@+id/catadd"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        app:layout_constraintTop_toTopOf="@id/logotext"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:tint="#F9D423" />
+
+    <Button
+        android:id="@+id/bakim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:onClick="bakim"
+        android:text="Bakım Takvimi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hos"
+        android:fontFamily="@font/poetsen"
+        android:textColor="#5A5641"/>
+
+    <Button
+        android:id="@+id/asi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbackground"
+        android:onClick="asi"
+        android:text="Aşı Takvimi"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/bakim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poetsen"
+        android:textColor="#5A5641"/>
+
+    <Button
+        android:id="@+id/beslenme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbackground"
+        android:onClick="beslenme"
+        android:text="Beslenme Takvimi"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/asi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poetsen"
+        android:textColor="#5A5641"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

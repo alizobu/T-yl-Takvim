@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Asi"
+    android:background="#F9D423">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/asitakvim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbackground"
+                android:text="Takvim"
+                android:textSize="18dp"
+                android:fontFamily="@font/poetsen"
+                android:textColor="#5A5641"/>
+            <TextView
+                android:id="@+id/logotext"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/pacifico"
+                android:text="Aşı Takvimi"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/kediadi_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundemailandpassword"
+                android:padding="10dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="210dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="2 Ayda 1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/icparazit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="İç Parazit"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/disparazit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dış Parazit"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal">
+
+                <CheckBox
+                    android:id="@+id/icparazit_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <CheckBox
+                    android:id="@+id/disparazit_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gunlukbakim"
+                android:layout_width="210dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="1 Yılda 1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/karma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Karma"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/losemi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lösemi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/kuduz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kuduz"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal">
+
+                <CheckBox
+                    android:id="@+id/karma_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <CheckBox
+                    android:id="@+id/losemi_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+                <CheckBox
+                    android:id="@+id/kuduz_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/geridonbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonbackground"
+                android:onClick="kaydet"
+                android:text="Kaydet"
+                android:textSize="18dp"
+                android:fontFamily="@font/poetsen"
+                android:textColor="#5A5641"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

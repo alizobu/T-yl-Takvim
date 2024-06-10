@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catadd2"
+    android:background="#F9D423">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/logotext"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/pacifico"
+                android:text="Tüylü Takvim"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kediadi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/backgroundemailandpassword"
+                android:drawablePadding="6dp"
+                android:hint="Kedinizin İsmi"
+                android:padding="10dp"
+                android:textColorHint="#87AF82"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poetsen"/>
+
+            <EditText
+                android:id="@+id/kediyasi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/backgroundemailandpassword"
+                android:drawablePadding="6dp"
+                android:fontFamily="@font/poetsen"
+                android:hint="Kedinizin Yaşı"
+                android:padding="10dp"
+                android:textColorHint="#87AF82"/>
+
+            <Spinner
+                android:id="@+id/kedicins_spinner"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poetsen"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/backgroundemailandpassword"
+                android:padding="10dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"
+                android:textColorHint="#87AF82"/>
+
+            <Spinner
+                android:id="@+id/kedicinsiyet_spinner"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poetsen"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/backgroundemailandpassword"
+                android:padding="10dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"
+                android:textColorHint="#87AF82"
+                />
+
+            <EditText
+                android:id="@+id/vetbilgi"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poetsen"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/backgroundemailandpassword"
+                android:drawablePadding="6dp"
+                android:hint="Veteriner Adı ve İletişim Bilgileri"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#87AF82"/>
+
+            <Button
+                android:id="@+id/geridonbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonbackground"
+                android:onClick="kaydet"
+                android:text="Kaydet"
+                android:textSize="18dp"
+                android:fontFamily="@font/poetsen"
+                android:textColor="#5A5641"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
